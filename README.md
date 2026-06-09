@@ -8,7 +8,7 @@
 
 ## 🔗 Acesse o projeto
 
-**[→ Ver online](https://raio-x-genz.vercel.app/)**
+<a href="https://raio-x-genz.vercel.app/" target="_blank" rel="noopener noreferrer"><strong>→ Ver online</strong></a>
 
 ---
 
