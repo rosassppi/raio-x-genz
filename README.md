@@ -2,23 +2,23 @@
 
 > Uma experiência interativa e visual com os resultados de uma pesquisa sobre hábitos financeiros de 110 jovens brasileiros.
 
-![Hero](https://placehold.co/1200x600/080808/4ade80?text=Raio-X+Financeiro+da+Geração+Z)
+![Hero](/components/tela-inicial.png)
 
 ---
 
 ## 🔗 Acesse o projeto
 
-**[→ Ver online](https://raio-x-genz.vercel.app)** *(atualize com o link real da Vercel)*
+**[→ Ver online](https://raio-x-genz.vercel.app/)**
 
 ---
 
 ## 🧠 Sobre o projeto
 
-Este projeto nasceu de uma pesquisa própria feita com **110 jovens brasileiros** da Geração Z sobre seus hábitos financeiros — controle de gastos, investimentos, bancos, cartão de crédito e muito mais.
+Este projeto nasceu de uma pesquisa própria feita com **110 jovens brasileiros** da Geração Z sobre seus hábitos financeiros, controle de gastos, investimentos, bancos, cartão de crédito e muito mais.
 
 Em vez de apresentar os dados em um dashboard comum, a ideia foi transformar os resultados em uma **experiência de scroll imersiva**, inspirada no Spotify Wrapped e no GitHub Year in Review.
 
-A página conta uma história através dos dados, com animações, números gigantes e insights escritos em primeira pessoa — como um analista explicando o que os números significam.
+A página conta uma história através dos dados, com animações, números gigantes e insights escritos em primeira pessoa, como um analista explicando o que os números significam.
 
 ---
 

@@ -101,6 +101,7 @@ const CSS = `
   @keyframes floatP { from{transform:translateY(0) scale(1);opacity:.12} to{transform:translateY(-26px) scale(1.3);opacity:.28} }
   @keyframes pulseRing { 0%{transform:scale(.8);opacity:.7} 100%{transform:scale(1.5);opacity:0} }
   @keyframes scrollBounce { from{transform:translateY(0)} to{transform:translateY(8px)} }
+  html,body{margin:0;padding:0}
   html{scroll-behavior:smooth}
   *{box-sizing:border-box}
 `;
