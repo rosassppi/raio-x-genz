@@ -18,7 +18,7 @@ Este projeto nasceu de uma pesquisa própria feita com **110 jovens brasileiros*
 
 Em vez de apresentar os dados em um dashboard comum, a ideia foi transformar os resultados em uma **experiência de scroll imersiva**, inspirada no Spotify Wrapped e no GitHub Year in Review.
 
-A página conta uma história através dos dados, com animações, números gigantes e insights escritos em primeira pessoa, como um analista explicando o que os números significam.
+A página conta uma história através dos dados, com animações e insights escritos em primeira pessoa.
 
 ---
 
@@ -44,7 +44,6 @@ A página conta uma história através dos dados, com animações, números giga
 - 📊 **Gráficos animados** com reveal no scroll
 - 💡 **Insights pessoais** escritos como observações humanas
 - 📱 **100% responsivo** — funciona bem no mobile e desktop
-- 🌙 **Dark mode premium** inspirado em fintechs modernas
 
 ---
 

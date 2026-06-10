@@ -650,6 +650,11 @@ function S_Highlights() {
 
 function Final() {
   const [ref, on] = useReveal();
+  const resources = [
+    { icon: "📄", label: "Base de dados utilizada", href: "https://docs.google.com/spreadsheets/d/1kX2tro6XpVje0ZxpsxY8iRndQpzoA2bLfu9fTq57xDI/edit?usp=sharing" },
+    { icon: "📝", label: "Formulário da pesquisa", href: "https://forms.gle/AwjzEa7mtaVD5AUm8" },
+    { icon: "💻", label: "GitHub do projeto", href: "https://github.com/rosassppi/raio-x-genz" },
+  ];
   return (
     <section style={{ padding: "120px 40px", background: C.text, textAlign: "center", position: "relative", overflow: "hidden" }}>
       <style>{CSS}</style>
@@ -658,11 +663,45 @@ function Final() {
         <h2 style={{ fontSize: "clamp(28px,5vw,48px)", fontWeight: 800, color: "#FFFFFF", margin: "0 0 24px", letterSpacing: "-0.025em", lineHeight: 1.15, fontFamily: FONT }}>
           Obrigada por explorar os dados!
         </h2>
-        <p style={{ color: "rgba(255,255,255,0.6)", fontSize: "clamp(16px,2.2vw,19px)", margin: "0 0 56px", lineHeight: 1.7, fontFamily: FONT }}>
-          Esta pesquisa foi realizada em 2026 com jovens brasileiros da Geração Z.<br />Todos os dados são reais e anônimos.
+        <p style={{ color: "rgba(255,255,255,0.6)", fontSize: "clamp(16px,2.2vw,19px)", margin: "0 0 48px", lineHeight: 1.7, fontFamily: FONT }}>
+          Todas as análises apresentadas nesta página foram realizadas a partir de 110 respostas anônimas coletadas por meio de um formulário online.
         </p>
-        <div style={{ width: 48, height: 3, borderRadius: 999, background: C.green, margin: "0 auto 0" }} />
-        <div style={{ marginTop: 60, color: "rgba(255,255,255,0.25)", fontSize: 12, fontFamily: FONT, letterSpacing: "0.06em" }}>Pesquisa realizada em 2026</div>
+        <div style={{ width: 48, height: 3, borderRadius: 999, background: C.green, margin: "0 auto 52px" }} />
+
+        <div style={{ marginBottom: 64 }}>
+          <div style={{ color: "rgba(255,255,255,0.35)", fontSize: 11, textTransform: "uppercase", letterSpacing: "0.13em", fontWeight: 700, marginBottom: 28, fontFamily: FONT }}>Recursos</div>
+          <div style={{ display: "flex", flexWrap: "wrap", gap: 14, justifyContent: "center" }}>
+            {resources.map((r, i) => (
+              <a
+                key={i}
+                href={r.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  display: "inline-flex", alignItems: "center", gap: 10,
+                  padding: "14px 26px", borderRadius: 14,
+                  background: "rgba(255,255,255,0.07)",
+                  border: "1px solid rgba(255,255,255,0.14)",
+                  color: "#FFFFFF",
+                  textDecoration: "none",
+                  fontSize: 15,
+                  fontWeight: 600,
+                  fontFamily: FONT,
+                  opacity: on ? 1 : 0,
+                  transform: on ? "none" : "translateY(18px)",
+                  transition: `opacity .6s cubic-bezier(.16,1,.3,1) ${.2 + i * .12}s, transform .6s cubic-bezier(.16,1,.3,1) ${.2 + i * .12}s, background .2s ease, border-color .2s ease`,
+                }}
+                onMouseEnter={e => { e.currentTarget.style.background = "rgba(123,227,77,0.13)"; e.currentTarget.style.borderColor = "rgba(123,227,77,0.38)"; }}
+                onMouseLeave={e => { e.currentTarget.style.background = "rgba(255,255,255,0.07)"; e.currentTarget.style.borderColor = "rgba(255,255,255,0.14)"; }}
+              >
+                <span style={{ fontSize: 17 }}>{r.icon}</span>
+                <span>{r.label}</span>
+              </a>
+            ))}
+          </div>
+        </div>
+
+        <div style={{ color: "rgba(255,255,255,0.25)", fontSize: 12, fontFamily: FONT, letterSpacing: "0.06em" }}>Pesquisa realizada em 2026</div>
       </div>
     </section>
   );
